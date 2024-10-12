@@ -111,7 +111,7 @@ func SendExtranonce(ctx *StratumContext) {
 	}
 }
 
-var walletRegex = regexp.MustCompile("pyrin:[a-z0-9]+")
+var walletRegex = regexp.MustCompile("xenom:[a-z0-9]+")
 var testnetWalletRegex = regexp.MustCompile("pyrintest:[a-z0-9]+")
 
 func CleanWallet(in string) (string, error) {
@@ -126,8 +126,8 @@ func CleanWallet(in string) (string, error) {
 	if err == nil {
 		return in, nil // good to go
 	}
-	if !strings.HasPrefix(in, "pyrin:") && !strings.HasPrefix(in, "pyrintest:") {
-		return CleanWallet("pyrin:" + in)
+	if !strings.HasPrefix(in, "xenom:") && !strings.HasPrefix(in, "pyrintest:") {
+		return CleanWallet("xenom:" + in)
 	}
 
 	// has pyrin: prefix but other weirdness somewhere
