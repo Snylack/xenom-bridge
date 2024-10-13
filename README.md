@@ -1,6 +1,6 @@
-# Pyrin Stratum Adapter
+# XENOM Stratum Adapter
 
-This is a [forked](https://github.com/onemorebsmith/kaspa-stratum-bridge) lightweight daemon that allows mining to a local (or remote) pyrin node using stratum-base miners.
+This is a [forked](https://github.com/onemorebsmith/kaspa-stratum-bridge) lightweight daemon that allows mining to a local (or remote) XENOM node using stratum-base miners.
 
 This daemon is confirmed working with the miners below in both dual-mining and pyrin-only modes (for those that support it) and Windows/MacOs/Linux/HiveOs.
 * [lolminer](https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.81)
